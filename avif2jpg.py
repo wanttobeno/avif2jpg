@@ -55,14 +55,10 @@ def handle_dir(root_path):
 
 
 if __name__ == '__main__':
-    print('#####\t version 1.0 20220329 \t#####')
-    try:
-        print('python info %s\n' % sys.version)
-    except BaseException as e:
-        pass
+    print('####\tavif图片格式转jpg格式v1.1\t####')
     while True:
         start_time = datetime.datetime.now()
-        inputfile = input('请输入想要重命名处理文件夹路径（如：E:/input/）：')
+        inputfile = input('请拖入avif文件或者含有avif文件的文件夹：')
         if inputfile.startswith('"'):
             inputfile = inputfile[1:-1]
         if inputfile.endswith('"'):
